@@ -4,6 +4,7 @@
   --color-very-pale-blue: hsl(225, 100%, 98%);
   --color-desaturated-blue: hsl(224, 23%, 55%);
   --color-dark-blue: hsl(223, 47%, 23%);
+  --color-hover: #766cf1;
 }
 
 html {
@@ -19,4 +20,82 @@ html {
 body {
   margin: 0;
   font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+  color: var(--color-desaturated-blue);
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: var(--color-dark-blue);
+}
+
+a {
+  color: #382ae1;
+  font-weight: bold;
+  transition: all 0.3s;
+  /* text-decoration: underline; */
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-hover);
+}
+
+/* Button */
+
+.btn {
+  background: var(---color-bright-blue);
+  border-radius: 13px;
+  box-shadow: 0 25px 30px var(---color-pale-blue);
+  cursor: pointer;
+  font-weight: 900;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 2rem 0;
+  transition: all 0.3s;
+}
+
+.btn-transparent {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.btn-transparent:hover {
+  color: var(--color-dark-blue);
+}
+
+.btn:hover {
+  background: #766cf1;
+}
+
+/* Plan */
+
+.plan {
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.9rem;
+  background: var(--color-very-pale-blue);
+}
+
+.plan__fee {
+  display: flex;
+  align-items: center;
+}
+
+.fee-cycle__heading {
+  font-size: 1em;
+  margin: 0.5rem 0;
+}
+
+.plan__icon {
+  margin: 2rem;
 }
