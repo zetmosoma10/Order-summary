@@ -34,10 +34,22 @@ body {
   }
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+}
+
 h1,
 h2 {
   margin: 0;
   color: var(--color-dark-blue);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 a {
@@ -60,10 +72,13 @@ a:hover {
   box-shadow: 0 25px 30px var(---color-pale-blue);
   cursor: pointer;
   font-weight: 900;
+  font-family: inherit;
+  font-size: 1.6rem;
   color: #fff;
   border: none;
+  margin: 3rem 0;
   width: 100%;
-  padding: 2rem 0;
+  padding: 1.8rem 0;
   transition: all 0.3s;
 }
 
@@ -71,7 +86,9 @@ a:hover {
   background: transparent;
   border: 0;
   color: inherit;
+  font-family: inherit;
   font-weight: 800;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: all 0.3s;
   width: 100%;
@@ -113,12 +130,13 @@ a:hover {
 /* Card */
 
 .card {
-  margin: 4rem;
+  min-width: 358px;
   max-width: 450px;
   box-shadow: 0 20px 30px var(---color-pale-blue);
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
+  background: white;
 }
 
 .card__image {
