@@ -18,10 +18,20 @@ html {
 }
 /* Typography */
 body {
+  background-image: url(icons/pattern-background-mobile.svg);
+  background-color: var(--color-very-pale-blue);
+  background-repeat: no-repeat;
   margin: 0;
   font-size: 1.6rem;
   font-family: "Red Hat Display", sans-serif;
   color: var(--color-desaturated-blue);
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url(icons/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 h1,
@@ -98,4 +108,23 @@ a:hover {
 
 .plan__icon {
   margin: 2rem;
+}
+
+/* Card */
+
+.card {
+  margin: 4rem;
+  max-width: 450px;
+  box-shadow: 0 20px 30px var(---color-pale-blue);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__body {
+  padding: 4rem;
 }
